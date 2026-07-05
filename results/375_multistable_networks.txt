@@ -1,0 +1,6380 @@
+Audit summary: 0/375 networks confirmed multistable (>=2 stable steady states in a single sample point).
+375 flagged: m=[4072, 7300, 7667, 8198, 11394, 11443, 11454, 13805, 15442, 16699, 16701, 17920, 18002, 18597, 19756, 20512, 30495, 33170, 33194, 33449, 34456, 34710, 35332, 36410, 36411, 36435, 36476, 36508, 36544, 36603, 36689, 37375, 37378, 37528, 37541, 37902, 38596, 38886, 38911, 38961, 39022, 39111, 39112, 39235, 40573, 40577, 40607, 41781, 41800, 41912, 42018, 42055, 42125, 42164, 42419, 44027, 44274, 44279, 44312, 44705, 44756, 45183, 45222, 45360, 45361, 45385, 46376, 46377, 46458, 47891, 47907, 48328, 48329, 48331, 48339, 48345, 48349, 49423, 49426, 49479, 49491, 49504, 51948, 52015, 60792, 60806, 60923, 61060, 61081, 61277, 61388, 61426, 63285, 63359, 65106, 65937, 66294, 66586, 66737, 69970, 70033, 71335, 71372, 72141, 74343, 74588, 74780, 74814, 74819, 74825, 74923, 75050, 75087, 75114, 75124, 75139, 75210, 75215, 75225, 75231, 78188, 78806, 78814, 78904, 78948, 78949, 78979, 82499, 82525, 83448, 83734, 83752, 83763, 85352, 85362, 87506, 87582, 87588, 88269, 88474, 88597, 88944, 89173, 89692, 92212, 92648, 92649, 92729, 92791, 92990, 93058, 93973, 94040, 94701, 94750, 95892, 96164, 96238, 96261, 96444, 96456, 96797, 96814, 96852, 97224, 97553, 99214, 99256, 99416, 99497, 100108, 100194, 100488, 100567, 100578, 101268, 104534, 104540, 105537, 106804, 107488, 107972, 110056, 110401, 110427, 110433, 110441, 110462, 110810, 110847, 111618, 111688, 111989, 111998, 112063, 112131, 112255, 112280, 112293, 112696, 115948, 117549, 117566, 117602, 117638, 117647, 117682, 117733, 118045, 118906, 119019, 119027, 121626, 121851, 123704, 123728, 126045, 126252, 126452, 126484, 126510, 126517, 127800, 128189, 128210, 128726, 128819, 128955, 129286, 129763, 129790, 129865, 130041, 130124, 130291, 130328, 130331, 130338, 130364, 130712, 130812, 130844, 130861, 130862, 130875, 130934, 131493, 131494, 131529, 131536, 131538, 131539, 131546, 131551, 131553, 131570, 132266, 132267, 132294, 132308, 132309, 132319, 133001, 134327, 134350, 134764, 134837, 134842, 134853, 135713, 135789, 137471, 137518, 137920, 138321, 138343, 138965, 138991, 140011, 140103, 142047, 143615, 143771, 144585, 144817, 147413, 147868, 153881, 155352, 155696, 156037, 156316, 156321, 156331, 157554, 158957, 159916, 159948, 160055, 160077, 160432, 160515, 162157, 162440, 163258, 165693, 166191, 166416, 166560, 166642, 167587, 168644, 171179, 171744, 172286, 172314, 172336, 172373, 173225, 173876, 174231, 174242, 175139, 175141, 175146, 179762, 180369, 187470, 203213, 205278, 205663, 205757, 207782, 207803, 211398, 211445, 211674, 212552, 215686, 215868, 221242, 221281, 227957, 227979, 227986, 227991, 227996, 228581, 234715, 234875, 235284, 235292, 235513, 235546, 236531, 236633, 236770, 236771, 236940, 236946, 236952, 236962, 237251, 237298, 237936, 237940, 237944, 237949, 239089, 239685, 243317, 243464, 243579, 243600, 245459]
+Multistability requires >=2 stable positive steady states at the SAME parameter value — stable counts from different sample points must not be added together.
+
+Network #1  (candidate m=4072, master index 13824)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  0  0 -1  0 -1
+     0  0  1 -1 -1  1
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1 + X3
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #2  (candidate m=7300, master index 208323)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1  0 -1 -1  0  1
+     1 -1  0  0  1 -1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> 0
+    X2      --k3--> X1
+    X2 + X3 --k4--> X3
+    X1      --k5--> X1 + X3
+    X1 + X3 --k6--> X2
+
+Network #3  (candidate m=7667, master index 45561)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1  0 -1  1 -1
+     1  0  1 -1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2      --k3--> X1 + X2 + X3
+    X2 + X3 --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #4  (candidate m=8198, master index 444664)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  1 -1
+     1 -1  0 -1  1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> 0
+    X2 + X3 --k4--> X2
+    X1      --k5--> X2 + X3
+    X1 + X2 --k6--> X3
+
+Network #5  (candidate m=11394, master index 47441)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1  0 -1  1 -1
+     1  0  1 -1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2      --k3--> X1 + X2 + X3
+    X2 + X3 --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X3
+
+Network #6  (candidate m=11443, master index 51925)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     0  1  0 -1  1  0
+     1  0  1 -1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2      --k3--> X1 + X2 + X3
+    X2 + X3 --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X2
+
+Network #7  (candidate m=11454, master index 20742)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1  0 -1  1  0
+     1  0  1 -1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2      --k3--> X1 + X2 + X3
+    X2 + X3 --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #8  (candidate m=13805, master index 52465)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     0  1  0 -1  1  0
+     1  0  1 -1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2      --k3--> X1 + X2 + X3
+    X2 + X3 --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X2 + X3
+
+Network #9  (candidate m=15442, master index 250230)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     1  1 -1 -1  0  0
+     0 -1  0 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #10  (candidate m=16699, master index 467833)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1 -1  0 -1
+     1  0 -1  0  1 -1
+     1 -1  1  1 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> 0
+    X2      --k3--> X1 + X3
+    X1      --k4--> X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X3
+
+Network #11  (candidate m=16701, master index 467809)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1 -1  0 -1
+     1  0 -1  0  1 -1
+     1 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> 0
+    X2      --k3--> X1 + X3
+    X1      --k4--> X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #12  (candidate m=17920, master index 392305)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    1 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1 -1
+     1 -1 -1  0  1  0
+    -1  0  0  1 -1  1
+  Reactions:
+    X3      --k1--> X1 + X2
+    X2      --k2--> 0
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X2 + X3
+
+Network #13  (candidate m=18002, master index 392257)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    1 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1 -1
+     1 -1 -1  0  0  0
+    -1  0  0  1 -1  1
+  Reactions:
+    X3      --k1--> X1 + X2
+    X2      --k2--> 0
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2 + X3
+
+Network #14  (candidate m=18597, master index 144363)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    1 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1 -1  0 -1
+     1  0 -1  0  1  0
+    -1  1 -1  1  0  0
+  Reactions:
+    X3      --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> X2
+
+Network #15  (candidate m=19756, master index 17248)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  0  0 -1  1 -1
+     0  0  1 -1 -1  1
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1 + X3
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X3
+
+Network #16  (candidate m=20512, master index 14107)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  0 -1
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #17  (candidate m=30495, master index 17563)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  1 -1
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #18  (candidate m=33170, master index 298689)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  1 -1 -1  0  0
+     1 -1  0 -1  0  1
+  Reactions:
+    0       --k1--> X1 + X2 + X3
+    X3      --k2--> X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> 0
+    X1      --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #19  (candidate m=33194, master index 498759)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  1 -1 -1
+     1  0 -1 -1  0  1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> 0
+    X1 + X3 --k6--> X2 + X3
+
+Network #20  (candidate m=33449, master index 106608)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    1 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0 -1  0  0
+     0 -1 -1  0  1  0
+    -1  1 -1  0  0  1
+  Reactions:
+    X3      --k1--> X1
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> 0
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #21  (candidate m=34456, master index 447796)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0 -1
+     1 -1  0 -1 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X3
+
+Network #22  (candidate m=34710, master index 304731)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0 -1 -1  0
+     1  1 -1  1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X1 + X2 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> 0
+    X1      --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #23  (candidate m=35332, master index 54008)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #24  (candidate m=36410, master index 445998)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  0 -1
+     1 -1  1 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X2 + X3 --k4--> X2
+    X1      --k5--> 0
+    X1 + X2 --k6--> X3
+
+Network #25  (candidate m=36411, master index 445999)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  0 -1
+     1 -1  1 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X3
+
+Network #26  (candidate m=36435, master index 273601)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  0  0 -1
+     0  1  0  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> 0
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #27  (candidate m=36476, master index 439118)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  0 -1  0  0 -1
+     1 -1  1 -1 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #28  (candidate m=36508, master index 447349)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0 -1
+     1 -1  0 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X3
+
+Network #29  (candidate m=36544, master index 149608)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0  0
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X2
+
+Network #30  (candidate m=36603, master index 439216)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  0 -1
+     1 -1  0 -1 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #31  (candidate m=36689, master index 273868)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  0  0 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #32  (candidate m=37375, master index 212215)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     1  1 -1 -1  1  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #33  (candidate m=37378, master index 189143)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     1  0 -1 -1  1  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X2 + X3 --k4--> X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #34  (candidate m=37528, master index 40734)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0 -1  0
+     0  0 -1  1  0  0
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #35  (candidate m=37541, master index 27208)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0 -1  0
+     0  1 -1  1  0  0
+     1  0 -1  0  0  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #36  (candidate m=37902, master index 54768)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #37  (candidate m=38596, master index 276614)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  0  1 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #38  (candidate m=38886, master index 446404)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  1 -1
+     1 -1  1 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X2 + X3 --k4--> X2
+    X1      --k5--> X2
+    X1 + X2 --k6--> X3
+
+Network #39  (candidate m=38911, master index 273745)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  0  1 -1
+     0  1  0  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #40  (candidate m=38961, master index 440206)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  0 -1  0  1 -1
+     1 -1  1 -1 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X3
+
+Network #41  (candidate m=39022, master index 53819)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0  0
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #42  (candidate m=39111, master index 447656)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  1 -1
+     1 -1  0 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X2 + X3 --k4--> X2
+    X1      --k5--> X2
+    X1 + X2 --k6--> X3
+
+Network #43  (candidate m=39112, master index 447657)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  1 -1
+     1 -1  0 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> X3
+
+Network #44  (candidate m=39235, master index 273964)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  0  1 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #45  (candidate m=40573, master index 54566)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #46  (candidate m=40577, master index 34147)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #47  (candidate m=40607, master index 509509)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1  0 -1
+     1  0 -1  0  1 -1
+     1 -1  1  1 -1  1
+  Reactions:
+    0       --k1--> X1 + X2 + X3
+    X3      --k2--> 0
+    X2      --k3--> X1 + X3
+    X1      --k4--> X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X3
+
+Network #48  (candidate m=41781, master index 212211)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1  1 -1 -1  0  1
+     1 -1  0  0  1 -1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> X3
+    X1      --k5--> X1 + X3
+    X1 + X3 --k6--> X2
+
+Network #49  (candidate m=41800, master index 189135)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1 -1  0  1
+     1 -1  0  0  1 -1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X2 + X3 --k4--> X3
+    X1      --k5--> X1 + X3
+    X1 + X3 --k6--> X2
+
+Network #50  (candidate m=41912, master index 446522)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  1 -1
+     1 -1  1 -1  1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X2 + X3 --k4--> X2
+    X1      --k5--> X2 + X3
+    X1 + X2 --k6--> X3
+
+Network #51  (candidate m=42018, master index 253802)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1  0 -1
+     1  0 -1  0  1  0
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X2
+
+Network #52  (candidate m=42055, master index 447748)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  1 -1
+     1 -1  0 -1  1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X2 + X3 --k4--> X2
+    X1      --k5--> X2 + X3
+    X1 + X2 --k6--> X3
+
+Network #53  (candidate m=42125, master index 27203)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0  0 -1
+     1  0 -1  0  1  0
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> X2
+
+Network #54  (candidate m=42164, master index 33707)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  0  0
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X2
+
+Network #55  (candidate m=42419, master index 250614)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  1  0 -1
+     1  1 -1 -1  0  0
+     0 -1  0 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #56  (candidate m=44027, master index 23505)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #57  (candidate m=44274, master index 250254)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0  0 -1
+     1 -1 -1  0  1  0
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X1
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X2
+
+Network #58  (candidate m=44279, master index 53915)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  1  0
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X2
+
+Network #59  (candidate m=44312, master index 23308)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  1  0
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> X2
+
+Network #60  (candidate m=44705, master index 39071)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #61  (candidate m=44756, master index 38775)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  1  0
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X2
+
+Network #62  (candidate m=45183, master index 43488)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0 -1  0
+     0  1 -1  1  0  0
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #63  (candidate m=45222, master index 201587)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     1  1 -1 -1  1  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #64  (candidate m=45360, master index 448230)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0 -1
+     1 -1  1 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X2 + X3 --k4--> X2
+    X1      --k5--> 0
+    X1 + X2 --k6--> X3
+
+Network #65  (candidate m=45361, master index 448231)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0 -1
+     1 -1  1 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X3
+
+Network #66  (candidate m=45385, master index 439304)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  0 -1
+     1 -1  1 -1 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #67  (candidate m=46376, master index 201583)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  1 -1 -1  0  1
+     1 -1  0  0  1 -1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> X3
+    X1      --k5--> X1 + X3
+    X1 + X3 --k6--> X2
+
+Network #68  (candidate m=46377, master index 448454)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  1 -1
+     1 -1  1 -1  1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X2 + X3 --k4--> X2
+    X1      --k5--> X2 + X3
+    X1 + X2 --k6--> X3
+
+Network #69  (candidate m=46458, master index 27704)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  1  0  0 -1
+     1  0 -1  0  1  0
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> X2
+
+Network #70  (candidate m=47891, master index 127586)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  1 -1  1  0  0
+     1 -1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #71  (candidate m=47907, master index 110866)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0  0
+     1 -1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #72  (candidate m=48328, master index 128086)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  1 -1  1  0 -1
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X3
+
+Network #73  (candidate m=48329, master index 127836)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  1 -1  1  0  0
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2 + X3
+
+Network #74  (candidate m=48331, master index 122678)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0 -1
+     1 -1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #75  (candidate m=48339, master index 111870)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0 -1
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X3
+
+Network #76  (candidate m=48345, master index 111368)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0  0
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2 + X3
+
+Network #77  (candidate m=48349, master index 97346)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0 -1
+     1 -1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #78  (candidate m=49423, master index 125038)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0 -1
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X3
+
+Network #79  (candidate m=49426, master index 116027)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0  0
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #80  (candidate m=49479, master index 102258)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0 -1
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X3
+
+Network #81  (candidate m=49491, master index 66411)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0  0
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #82  (candidate m=49504, master index 128490)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1 -1  1  0  0
+     1  0 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #83  (candidate m=51948, master index 134461)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1  0 -1  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #84  (candidate m=52015, master index 133496)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1  0 -1  0  0 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #85  (candidate m=60792, master index 127679)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  1 -1  1  0 -1
+     1 -1 -1  0  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #86  (candidate m=60806, master index 151240)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  1 -1  1  0  0
+     1 -1 -1  0  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X2
+
+Network #87  (candidate m=60923, master index 275716)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1 -1
+     1 -1 -1  0  1  0
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> 0
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X2
+
+Network #88  (candidate m=61060, master index 275644)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1 -1
+     1 -1 -1  0  0  0
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> 0
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #89  (candidate m=61081, master index 133259)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1  0 -1  0  0  0
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #90  (candidate m=61277, master index 111055)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0 -1
+     1 -1 -1  0  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #91  (candidate m=61388, master index 150592)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0  0
+     1 -1 -1  0  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X2
+
+Network #92  (candidate m=61426, master index 148276)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1  0 -1  0  0  0
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X2
+
+Network #93  (candidate m=63285, master index 161465)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0  0  1  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #94  (candidate m=63359, master index 161321)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0  0  1  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #95  (candidate m=65106, master index 262381)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0 -1  0  1 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> 0
+    X2      --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #96  (candidate m=65937, master index 296611)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  1  0 -1  0 -1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X2 + X3
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1
+
+Network #97  (candidate m=66294, master index 296726)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  1  0 -1  1 -1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X2 + X3
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> X1
+
+Network #98  (candidate m=66586, master index 167727)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0 -1  1  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #99  (candidate m=66737, master index 167679)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0 -1  1  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #100  (candidate m=69970, master index 140031)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  0  1  0 -1
+     0  0 -1 -1  1 -1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> 0
+    X2      --k3--> X3
+    X2 + X3 --k4--> X1
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #101  (candidate m=70033, master index 80364)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  0  1  0 -1
+     0  0 -1  0  1 -1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> 0
+    X2      --k3--> X3
+    X2 + X3 --k4--> X1 + X2
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #102  (candidate m=71335, master index 341195)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1 -1  0 -1
+     0  0 -1  1  1 -1
+     1 -1  0  1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> 0
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #103  (candidate m=71372, master index 341243)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1 -1  0 -1
+     0  0 -1  1  1 -1
+     1 -1  0  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> 0
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X3
+
+Network #104  (candidate m=72141, master index 363584)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1 -1  0 -1
+     0 -1 -1  0  1  0
+     1  1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> 0
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X2 + X3
+
+Network #105  (candidate m=74343, master index 10173)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     0  1  0  0  0 -1
+     0  0 -1  1 -1  1
+  Reactions:
+    0       --k1--> X1
+    X3      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X3
+
+Network #106  (candidate m=74588, master index 29430)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0  0 -1
+     0  1  0  0  1 -1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #107  (candidate m=74780, master index 271371)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1 -1 -1  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #108  (candidate m=74814, master index 127727)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  1 -1  1  0 -1
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X3
+
+Network #109  (candidate m=74819, master index 38034)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     0  1 -1  1  0  0
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #110  (candidate m=74825, master index 122479)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0 -1
+     1 -1 -1  0  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1
+
+Network #111  (candidate m=74923, master index 256702)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0 -1  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #112  (candidate m=75050, master index 256642)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0 -1  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #113  (candidate m=75087, master index 111151)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0 -1
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X3
+
+Network #114  (candidate m=75114, master index 32594)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     0  0 -1  1  0  0
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> 0
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #115  (candidate m=75124, master index 96947)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0 -1
+     1 -1 -1  0  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1
+
+Network #116  (candidate m=75139, master index 22371)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     0  1 -1  1  0  0
+     1  0 -1  0  0  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #117  (candidate m=75210, master index 258502)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0 -1  1  1 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #118  (candidate m=75215, master index 258412)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0 -1  1  0 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #119  (candidate m=75225, master index 255599)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0 -1  0  1 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #120  (candidate m=75231, master index 255485)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0 -1  0  0 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #121  (candidate m=78188, master index 167245)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     1  1 -1 -1  1  0
+     1  0  0  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2 + X3
+    X2      --k3--> X1
+    X2 + X3 --k4--> X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #122  (candidate m=78806, master index 124903)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0 -1
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X3
+
+Network #123  (candidate m=78814, master index 115952)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0  0
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #124  (candidate m=78904, master index 101987)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0 -1
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X3
+
+Network #125  (candidate m=78948, master index 2799)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0  0
+     1  0  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X3
+    X2      --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #126  (candidate m=78949, master index 2800)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0  0
+     1  0  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #127  (candidate m=78979, master index 128286)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1 -1  1  0  0
+     1  0 -1  0  0  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #128  (candidate m=82499, master index 265899)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0  0  1  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #129  (candidate m=82525, master index 265345)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0  0  1  0 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #130  (candidate m=83448, master index 274061)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  1  0 -1
+     0  1  0  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #131  (candidate m=83734, master index 257062)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  0 -1  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #132  (candidate m=83752, master index 274232)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  1  0 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #133  (candidate m=83763, master index 255967)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  0 -1  0  0 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #134  (candidate m=85352, master index 41496)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  1  0 -1  0
+     0  0 -1  1  0  0
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #135  (candidate m=85362, master index 23316)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     0  1 -1  1  0  0
+     1  0 -1  0  0  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #136  (candidate m=87506, master index 134541)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1  0 -1  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> 0
+
+Network #137  (candidate m=87582, master index 134200)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1  0 -1  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #138  (candidate m=87588, master index 129710)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1  0 -1  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #139  (candidate m=88269, master index 264769)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0  0  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #140  (candidate m=88474, master index 7811)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  0  0  1  1 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #141  (candidate m=88597, master index 249394)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     1  1 -1 -1  0  0
+     0 -1  1 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #142  (candidate m=88944, master index 32450)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  0  0 -1  1  0
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> 0
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #143  (candidate m=89173, master index 255038)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0  0  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #144  (candidate m=89692, master index 17151)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  0 -1  1  1 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #145  (candidate m=92212, master index 237058)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     1  1  0 -1  0  0
+     0 -1  1 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #146  (candidate m=92648, master index 410395)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  1 -1  1  0 -1
+     1 -1  0  1 -1  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #147  (candidate m=92649, master index 410396)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  1 -1  1  0 -1
+     1 -1  0  1 -1  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #148  (candidate m=92729, master index 17135)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  1  0 -1  1 -1
+     0 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #149  (candidate m=92791, master index 10141)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  1 -1  0  0  0
+     0  0  1 -1  1 -1
+  Reactions:
+    0       --k1--> X1
+    X3      --k2--> X2 + X3
+    X2      --k3--> X3
+    X2 + X3 --k4--> X2
+    X1      --k5--> X1 + X3
+    X1 + X3 --k6--> 0
+
+Network #150  (candidate m=92990, master index 37938)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  1  0 -1  1  0
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #151  (candidate m=93058, master index 22251)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  1  0 -1  1  0
+     1  0  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2 + X3
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #152  (candidate m=93973, master index 41756)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0  0  0  0 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #153  (candidate m=94040, master index 42511)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0  0  0  0 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #154  (candidate m=94701, master index 67595)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0  0  0  0 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #155  (candidate m=94750, master index 66624)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0  0  0  0 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #156  (candidate m=95892, master index 410955)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  1 -1  1  0 -1
+     1 -1 -1  1 -1  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #157  (candidate m=96164, master index 42513)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0  0  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #158  (candidate m=96238, master index 41762)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0  0  0  0 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #159  (candidate m=96261, master index 29151)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0  0  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #160  (candidate m=96444, master index 246162)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     1 -1 -1  0  1  0
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> 0
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X2
+
+Network #161  (candidate m=96456, master index 67597)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1  0  0  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #162  (candidate m=96797, master index 263041)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     1 -1 -1  0  0  0
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> 0
+    X2 + X3 --k3--> 0
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X2
+
+Network #163  (candidate m=96814, master index 66630)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1  0  0  0  0 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #164  (candidate m=96852, master index 62610)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1  0  0  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #165  (candidate m=97224, master index 246126)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     1  1 -1 -1  0  0
+     0 -1  0 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #166  (candidate m=97553, master index 409166)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0  0 -1
+     0  1  0  1  0 -1
+     1 -1 -1  1 -1  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X2
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #167  (candidate m=99214, master index 265971)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0  0  1  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #168  (candidate m=99256, master index 265489)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0  0  1  1 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X2
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #169  (candidate m=99416, master index 255218)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  0 -1  0
+     1  0  0  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #170  (candidate m=99497, master index 277108)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  1  1 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X2
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #171  (candidate m=100108, master index 277266)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  1  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #172  (candidate m=100194, master index 274157)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  1  1 -1
+     0  1  0  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X2
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #173  (candidate m=100488, master index 257122)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  0 -1  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #174  (candidate m=100567, master index 274280)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1 -1  0
+     1  0 -1  1  1 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #175  (candidate m=100578, master index 256087)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  0 -1  0  1 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #176  (candidate m=101268, master index 249778)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1  0 -1
+     1  1 -1 -1  0  0
+     0 -1  1 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #177  (candidate m=104534, master index 250638)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  1  0  0 -1
+     1 -1 -1  0  1  0
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X2
+
+Network #178  (candidate m=104540, master index 237562)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     1  0 -1  0  1  0
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X2
+
+Network #179  (candidate m=105537, master index 84707)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    1 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1  0 -1
+     0  0  0  1  1 -1
+    -1  1 -1  0  0  1
+  Reactions:
+    X3      --k1--> X1
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X2
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> X3
+
+Network #180  (candidate m=106804, master index 130410)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1  0 -1  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #181  (candidate m=107488, master index 264913)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0  0  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X2
+    X1      --k4--> X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #182  (candidate m=107972, master index 33602)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1  0 -1
+     0  0  0 -1  1  0
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> 0
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #183  (candidate m=110056, master index 14707)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0  0  0  1 -1
+     0 -1  0  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #184  (candidate m=110401, master index 42228)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0  0  0  1 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #185  (candidate m=110427, master index 167237)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  1 -1 -1  0  1
+     1  0  0  0  1 -1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2 + X3
+    X2      --k3--> X1
+    X2 + X3 --k4--> X3
+    X1      --k5--> X1 + X3
+    X1 + X3 --k6--> X2
+
+Network #186  (candidate m=110433, master index 42639)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0  0  0  1 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> 0
+
+Network #187  (candidate m=110441, master index 21910)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0  0  0  1 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #188  (candidate m=110462, master index 36361)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0  0  0  1 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #189  (candidate m=110810, master index 67755)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0  0  0  1 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> 0
+
+Network #190  (candidate m=110847, master index 67228)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0  0  0  1 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #191  (candidate m=111618, master index 63048)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  0  0  0  1 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #192  (candidate m=111688, master index 62241)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  0  0  0  1 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #193  (candidate m=111989, master index 42232)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0  0  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #194  (candidate m=111998, master index 36363)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0  0  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #195  (candidate m=112063, master index 21914)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0  0  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #196  (candidate m=112131, master index 67757)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1  0  0  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> 0
+
+Network #197  (candidate m=112255, master index 14711)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0  0  0  1 -1
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X2
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #198  (candidate m=112280, master index 67232)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1  0  0  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #199  (candidate m=112293, master index 63050)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1  0  0  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #200  (candidate m=112696, master index 62245)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1  0  0  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #201  (candidate m=115948, master index 271707)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1 -1 -1  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #202  (candidate m=117549, master index 172328)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  1 -1  1  0  0
+     1  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #203  (candidate m=117566, master index 172763)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  1 -1  1  0 -1
+     1  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #204  (candidate m=117602, master index 168014)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0 -1
+     1  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #205  (candidate m=117638, master index 159825)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0  0
+     1  0 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #206  (candidate m=117647, master index 169683)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0 -1
+     1  0 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X3
+
+Network #207  (candidate m=117682, master index 107882)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #208  (candidate m=117733, master index 107884)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1 -1  0  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #209  (candidate m=118045, master index 193698)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0  0
+     1 -1  0  1 -1  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #210  (candidate m=118906, master index 107307)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #211  (candidate m=119019, master index 107313)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1 -1  0  0  0 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #212  (candidate m=119027, master index 81435)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1 -1  0  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #213  (candidate m=121626, master index 168015)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  0 -1  1  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #214  (candidate m=121851, master index 167132)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  0 -1  1  0 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #215  (candidate m=123704, master index 107946)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  1 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> 0
+
+Network #216  (candidate m=123728, master index 107948)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1 -1  0  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> 0
+
+Network #217  (candidate m=126045, master index 168063)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  0 -1  1  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #218  (candidate m=126252, master index 167228)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  0 -1  1  1 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #219  (candidate m=126452, master index 107675)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  1 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #220  (candidate m=126484, master index 87585)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  1 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #221  (candidate m=126510, master index 107679)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1 -1  0  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #222  (candidate m=126517, master index 87587)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1 -1  0  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #223  (candidate m=127800, master index 5241)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  1  0  0  1 -1
+     1 -1  0  1  0  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1 + X2 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #224  (candidate m=128189, master index 70449)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  1 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #225  (candidate m=128210, master index 70453)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1 -1  0  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #226  (candidate m=128726, master index 200046)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  1 -1  0  0 -1
+     1 -1  0  1 -1  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #227  (candidate m=128819, master index 75202)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     1 -1  0  1  0  0
+     1  1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #228  (candidate m=128955, master index 204200)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  1 -1  0  0 -1
+     1 -1  0  1  0  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #229  (candidate m=129286, master index 204416)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  1 -1  0  1 -1
+     1 -1  0  1  0  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #230  (candidate m=129763, master index 145368)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     0  1 -1  1  0  0
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2 + X3
+
+Network #231  (candidate m=129790, master index 143802)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1 -1  1  0 -1
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X3
+
+Network #232  (candidate m=129865, master index 130336)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1 -1  1  0  0
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #233  (candidate m=130041, master index 144991)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     0  1 -1  1  0 -1
+     1 -1 -1  0  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #234  (candidate m=130124, master index 106362)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1  0  0 -1
+     0 -1  0  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #235  (candidate m=130291, master index 104378)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  0 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #236  (candidate m=130328, master index 106366)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1 -1  0  0  0 -1
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #237  (candidate m=130331, master index 104380)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1 -1  0  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #238  (candidate m=130338, master index 106346)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0 -1
+     1 -1  0  0 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> 0
+
+Network #239  (candidate m=130364, master index 150208)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     0  1 -1  1  0  0
+     1 -1 -1  0  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X2
+
+Network #240  (candidate m=130712, master index 190074)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  0  0
+     1 -1  0  1 -1  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #241  (candidate m=130812, master index 205557)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  1 -1  1  0  0
+     1 -1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #242  (candidate m=130844, master index 106410)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0 -1
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X3
+
+Network #243  (candidate m=130861, master index 105490)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0  0
+     1 -1  0  0 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #244  (candidate m=130862, master index 105491)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0  0
+     1 -1  0  0 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #245  (candidate m=130875, master index 136472)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     0  1 -1  1  0  0
+     1  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #246  (candidate m=130934, master index 276628)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1 -1
+     1 -1 -1  0  1  0
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> 0
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X2
+
+Network #247  (candidate m=131493, master index 205682)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  1 -1  1  0  0
+     1 -1 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2 + X3
+
+Network #248  (candidate m=131494, master index 202119)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0 -1
+     1 -1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #249  (candidate m=131529, master index 196945)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0 -1
+     1 -1 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X3
+
+Network #250  (candidate m=131536, master index 137067)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     0  1 -1  1  0 -1
+     1  0 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X3
+
+Network #251  (candidate m=131538, master index 105854)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2 + X3
+
+Network #252  (candidate m=131539, master index 105855)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     0  0 -1  1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2 + X3
+
+Network #253  (candidate m=131546, master index 189921)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0 -1
+     1 -1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #254  (candidate m=131551, master index 136786)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     0  1 -1  1  0  0
+     1  0 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2 + X3
+
+Network #255  (candidate m=131553, master index 143523)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1 -1  1  0 -1
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X3
+
+Network #256  (candidate m=131570, master index 392233)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  1 -1 -1
+     0  1 -1 -1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2 + X3
+
+Network #257  (candidate m=132266, master index 203411)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0 -1
+     1 -1 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X3
+
+Network #258  (candidate m=132267, master index 199036)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  1 -1  1  0  0
+     1 -1 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #259  (candidate m=132294, master index 192153)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0 -1
+     1 -1 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X3
+
+Network #260  (candidate m=132308, master index 64781)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #261  (candidate m=132309, master index 64782)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1  1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #262  (candidate m=132319, master index 128810)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1 -1  1  0  0
+     1  0 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #263  (candidate m=133001, master index 140070)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1 -1 -1  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #264  (candidate m=134327, master index 104506)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  1 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> 0
+
+Network #265  (candidate m=134350, master index 102907)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  0 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #266  (candidate m=134764, master index 104508)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1 -1  0  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> 0
+
+Network #267  (candidate m=134837, master index 81021)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1 -1  0  0  0 -1
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #268  (candidate m=134842, master index 102913)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1 -1  0  0  0 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #269  (candidate m=134853, master index 80443)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1 -1  0  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #270  (candidate m=135713, master index 253778)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1 -1 -1
+     1  1  0 -1  0  0
+     0 -1  1 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X3
+    X1 + X2 --k6--> X2
+
+Network #271  (candidate m=135789, master index 27155)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     1  1  0 -1  0  0
+     0  0  1 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2 + X3
+    X2      --k3--> X1 + X2 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #272  (candidate m=137471, master index 43440)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0  0 -1
+     0  1  0 -1  1  0
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #273  (candidate m=137518, master index 27112)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0  0 -1
+     0  1  0 -1  1  0
+     1  0  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2 + X3
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #274  (candidate m=137920, master index 200629)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  1 -1  0  0 -1
+     1 -1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #275  (candidate m=138321, master index 202736)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  1 -1  0  1 -1
+     1 -1  0  1  0  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #276  (candidate m=138343, master index 202364)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  1 -1  0  0 -1
+     1 -1  0  1  0  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> 0
+
+Network #277  (candidate m=138965, master index 200788)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  1 -1  0  1 -1
+     1 -1  0  1 -1  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #278  (candidate m=138991, master index 199678)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  1 -1  0  0 -1
+     1 -1  0  1 -1  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> 0
+
+Network #279  (candidate m=140011, master index 246738)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     1 -1 -1  0  1  0
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> 0
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X2
+
+Network #280  (candidate m=140103, master index 263761)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     1 -1 -1  0  0  0
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> 0
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X2
+
+Network #281  (candidate m=142047, master index 43022)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0  0 -1
+     0  1  0 -1  1 -1
+     1 -1  1  0  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #282  (candidate m=143615, master index 39184)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  1  0 -1
+     0  1  0  0  1 -1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1 + X2
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #283  (candidate m=143771, master index 245527)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1 -1  0
+     1  1 -1 -1  0  0
+     0 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #284  (candidate m=144585, master index 247034)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1 -1  0
+     1  1 -1 -1  0  0
+     0 -1  0 -1 -1  1
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> X1
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #285  (candidate m=144817, master index 33746)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     0  0 -1  1  0  0
+     1 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> 0
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #286  (candidate m=147413, master index 365958)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  0  1 -1  0
+     0  1 -1 -1  0  0
+     1 -1  0 -1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> X1
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #287  (candidate m=147868, master index 333703)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  0  1 -1  0
+     0  1 -1 -1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #288  (candidate m=153881, master index 410687)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     0  1 -1  1  0 -1
+     1 -1  0  1 -1  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2
+    X2      --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #289  (candidate m=155352, master index 87305)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  0 -1  0  1 -1
+     0 -1  0  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #290  (candidate m=155696, master index 103899)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  1 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #291  (candidate m=156037, master index 86921)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  0 -1  0  1 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #292  (candidate m=156316, master index 87309)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1 -1  0  0  1 -1
+     0  0 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X1
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #293  (candidate m=156321, master index 103903)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     1 -1  0  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #294  (candidate m=156331, master index 86923)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1 -1  0  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #295  (candidate m=157554, master index 237538)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1  0 -1
+     1  1  0 -1  0  0
+     0 -1  1 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #296  (candidate m=158957, master index 165099)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0 -1  0
+     1  0  0  1  0 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X1
+    X2      --k3--> X2 + X3
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #297  (candidate m=159916, master index 17519)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1  0 -1
+     0  1  0 -1  1 -1
+     0 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #298  (candidate m=159948, master index 15768)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1  0 -1
+     0  1  0 -1  1 -1
+     0 -1  1  0  0  0
+  Reactions:
+    0       --k1--> X1
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1 + X3
+    X1      --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #299  (candidate m=160055, master index 38706)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1  0 -1
+     0  1  0 -1  1  0
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #300  (candidate m=160077, master index 23196)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1  0 -1
+     0  1  0 -1  1  0
+     1  0  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2 + X3
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #301  (candidate m=160432, master index 118267)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0  0 -1
+     1  1 -1  0  1 -1
+     1 -1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #302  (candidate m=160515, master index 165101)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  0  0  1  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #303  (candidate m=162157, master index 117551)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  1 -1  0  1 -1
+     1 -1  0  1  0  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2 + X3 --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #304  (candidate m=162440, master index 14623)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1  0 -1
+     0  1  0  0  1 -1
+     0 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1
+    X3      --k2--> X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1 + X2
+    X1      --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #305  (candidate m=163258, master index 246702)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0  1  0 -1
+     1  1 -1 -1  0  0
+     0 -1  0 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #306  (candidate m=165693, master index 17535)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     0  0 -1  1  1 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #307  (candidate m=166191, master index 15800)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     0  0 -1  1  1 -1
+     0  1  0  0 -1  0
+  Reactions:
+    0       --k1--> X1
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X3
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #308  (candidate m=166416, master index 70261)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  0 -1  0  1 -1
+     0 -1  1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #309  (candidate m=166560, master index 135811)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1  0 -1  1  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #310  (candidate m=166642, master index 70265)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0  0 -1
+     1 -1  0  0  1 -1
+     0  1 -1  1  0  0
+  Reactions:
+    0       --k1--> X2
+    X2      --k2--> X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #311  (candidate m=167587, master index 165195)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0 -1  0
+     1  0  0  1  1 -1
+     0 -1  1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X1
+    X2      --k3--> X2 + X3
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #312  (candidate m=168644, master index 165197)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  0  0  1  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #313  (candidate m=171179, master index 108723)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1 -1  0
+     1  0 -1  0  1  0
+     0 -1 -1  0  0  1
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2 + X3 --k3--> 0
+    X1      --k4--> 0
+    X1 + X3 --k5--> X2 + X3
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #314  (candidate m=171744, master index 109046)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1 -1  0
+     1  0 -1  0  1  0
+     0 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2 + X3 --k3--> 0
+    X1      --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #315  (candidate m=172286, master index 230160)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1 -1
+     0  1 -1  1  0  0
+     1 -1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X2
+
+Network #316  (candidate m=172314, master index 229186)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1 -1  1  0 -1
+     1 -1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #317  (candidate m=172336, master index 229596)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1 -1  1  0 -1
+     1 -1 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X3
+
+Network #318  (candidate m=172373, master index 222779)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1 -1  1  0  0
+     1 -1 -1  1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2 + X3 --k3--> X1
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #319  (candidate m=173225, master index 363096)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1  0 -1
+     0 -1 -1  0  1  0
+     1  1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> 0
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X2 + X3
+
+Network #320  (candidate m=173876, master index 27656)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  1  0 -1
+     1  1  0 -1  0  0
+     0  0  1 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2 + X3
+    X2      --k3--> X1 + X2 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #321  (candidate m=174231, master index 43823)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  1  0 -1
+     0  1  0 -1  1  0
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #322  (candidate m=174242, master index 27613)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  1  0 -1
+     0  1  0 -1  1  0
+     1  0  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2 + X3
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #323  (candidate m=175139, master index 410763)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     0  1 -1  1  0 -1
+     1 -1  1  1 -1  1
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X2
+    X2      --k3--> X1 + X3
+    X1      --k4--> X1 + X2 + X3
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #324  (candidate m=175141, master index 43927)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  1  0 -1
+     0  1  0 -1  1 -1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #325  (candidate m=175146, master index 43302)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  1  0 -1
+     0  1  0 -1  1 -1
+     1 -1  1  0  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1 + X3
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> 0
+
+Network #326  (candidate m=179762, master index 40638)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  0  0 -1
+     0  0  0 -1  1  0
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #327  (candidate m=180369, master index 41400)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     1  1  0  1  0 -1
+     0  0  0 -1  1  0
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X1 + X3
+    X3      --k2--> X1
+    X2      --k3--> X2 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X2
+    X1 + X3 --k6--> X3
+
+Network #328  (candidate m=187470, master index 14655)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     0  0  0  1  1 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X1 + X2
+    X1      --k4--> X1 + X2
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> 0
+
+Network #329  (candidate m=203213, master index 491049)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1  0 -1
+     1 -1 -1  0  1  0
+     1  1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X2      --k2--> X1 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> 0
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X2 + X3
+
+Network #330  (candidate m=205278, master index 347127)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  0  0  1 -1 -1
+     0  1 -1 -1  1  0
+     1 -1  0  0  1 -1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> X1 + X3
+    X1      --k5--> X2 + X3
+    X1 + X3 --k6--> 0
+
+Network #331  (candidate m=205663, master index 446521)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  0  1 -1 -1
+     1  0 -1  0  1 -1
+     1 -1  1 -1  1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> 0
+    X2      --k3--> X3
+    X2 + X3 --k4--> X1 + X2
+    X1      --k5--> X2 + X3
+    X1 + X2 --k6--> X3
+
+Network #332  (candidate m=205757, master index 347175)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  0  0  1 -1 -1
+     0  1 -1 -1  1  1
+     1 -1  0  0  1 -1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> X1 + X3
+    X1      --k5--> X2 + X3
+    X1 + X3 --k6--> X2
+
+Network #333  (candidate m=207782, master index 98052)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1 -1  0
+     1  0 -1  0  1  0
+     0 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X2
+    X3      --k2--> X1
+    X2 + X3 --k3--> X3
+    X1      --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #334  (candidate m=207803, master index 195643)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1 -1  0
+     1  0 -1  0  1  0
+     1 -1 -1  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> 0
+    X1      --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #335  (candidate m=211398, master index 229196)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  0  1 -1  0
+     1  1 -1 -1  0  0
+     1 -1  0 -1 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> X1
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #336  (candidate m=211445, master index 212118)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  0  1 -1  0
+     1  1 -1 -1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X2
+    X2      --k3--> 0
+    X2 + X3 --k4--> X1 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #337  (candidate m=211674, master index 273993)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    1 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0 -1 -1  0
+     1 -1 -1  0  1  0
+     0  0  0  1 -1  1
+  Reactions:
+    X3      --k1--> X1 + X2 + X3
+    X2      --k2--> X1
+    X2 + X3 --k3--> X3
+    X1      --k4--> X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #338  (candidate m=212552, master index 106548)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     0  0 -1 -1  0  1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> 0
+    X1 + X3 --k6--> X1 + X2 + X3
+
+Network #339  (candidate m=215686, master index 334804)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1 -1 -1  0  0
+     1 -1  0 -1  0  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> 0
+    X1      --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #340  (candidate m=215868, master index 101196)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1  0
+     0  0 -1 -1  0  1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1
+    X2      --k3--> X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> 0
+    X1 + X3 --k6--> X1 + X2 + X3
+
+Network #341  (candidate m=221242, master index 251962)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0  0 -1
+     1  1 -1 -1  0  0
+     0 -1  1 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> X1 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #342  (candidate m=221281, master index 252154)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  1  0 -1
+     1  1 -1 -1  0  0
+     0 -1  1 -1  1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> X1 + X3
+    X2 + X3 --k4--> X1
+    X1      --k5--> X1 + X3
+    X1 + X2 --k6--> X2
+
+Network #343  (candidate m=227957, master index 202641)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1 -1  0
+     1  1 -1  1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> 0
+    X1      --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #344  (candidate m=227979, master index 190821)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1 -1  0
+     1  0 -1  1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> 0
+    X1      --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #345  (candidate m=227986, master index 385230)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1 -1  0
+     0  1 -1  1  0  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> 0
+    X1      --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #346  (candidate m=227991, master index 391108)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1 -1  0
+     0  1 -1  1  0 -1
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> 0
+    X1      --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X3
+
+Network #347  (candidate m=227996, master index 190227)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0 -1 -1  0
+     1  0 -1  0  1  0
+     1 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2 + X3 --k3--> X3
+    X1      --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #348  (candidate m=228581, master index 268165)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 0 1 0 0 1
+    0 1 0 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  1  0 -1 -1  0
+     1  1 -1  1  0  0
+     0 -1  0  0 -1  1
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X1 + X2
+    X2      --k3--> 0
+    X1      --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #349  (candidate m=234715, master index 276244)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  1  1 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X2
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #350  (candidate m=234875, master index 276196)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  1  0 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #351  (candidate m=235284, master index 276402)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  1  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #352  (candidate m=235292, master index 275702)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  0  1 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #353  (candidate m=235513, master index 276378)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  1  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #354  (candidate m=235546, master index 275630)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  0  0 -1
+     0  1 -1  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> 0
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #355  (candidate m=236531, master index 276100)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  0  1 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #356  (candidate m=236633, master index 276052)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  0  0 -1
+     0  1 -1  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #357  (candidate m=236770, master index 443880)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  0 -1
+     1 -1  0 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> 0
+    X2 + X3 --k4--> X2
+    X1      --k5--> 0
+    X1 + X2 --k6--> X3
+
+Network #358  (candidate m=236771, master index 443881)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0 -1 -1
+     1  0 -1  0  0 -1
+     1 -1  0 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> 0
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X3
+    X1 + X2 --k6--> X3
+
+Network #359  (candidate m=236940, master index 270315)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  1  1 -1
+     0  1  0  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> X2
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #360  (candidate m=236946, master index 270219)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  1  0 -1
+     0  1  0  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> X2
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #361  (candidate m=236952, master index 269899)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  0  1 -1
+     0  1  0  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #362  (candidate m=236962, master index 269755)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  0  0 -1
+     0  1  0  0 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> 0
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #363  (candidate m=237251, master index 439996)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  0 -1  0  1 -1
+     1 -1  0 -1 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> 0
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X3
+
+Network #364  (candidate m=237298, master index 438910)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  0  0  0 -1
+     1  0 -1  0  0 -1
+     1 -1  0 -1 -1  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> 0
+    X2 + X3 --k4--> X2
+    X1 + X3 --k5--> X1
+    X1 + X2 --k6--> X3
+
+Network #365  (candidate m=237936, master index 270442)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  1  1 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #366  (candidate m=237940, master index 270394)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  1  0 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> X2 + X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #367  (candidate m=237944, master index 270122)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  0  1 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> X3
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1
+
+Network #368  (candidate m=237949, master index 270026)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    0 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1 -1  0
+     1  0 -1  0  0 -1
+     0  1  0  1 -1  0
+  Reactions:
+    0       --k1--> X1 + X2
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> X3
+    X1      --k4--> X3
+    X1 + X3 --k5--> 0
+    X1 + X2 --k6--> X1
+
+Network #369  (candidate m=239089, master index 246746)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    1 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1 -1  0  0
+     1 -1 -1  0  1  0
+     0  0 -1  0 -1  1
+  Reactions:
+    X3      --k1--> X1 + X2 + X3
+    X2      --k2--> 0
+    X2 + X3 --k3--> X1
+    X1      --k4--> 0
+    X1 + X3 --k5--> X1 + X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #370  (candidate m=239685, master index 3317)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 1 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     0  1  0 -1  1  0
+     1  0  0 -1 -1  1
+  Reactions:
+    0       --k1--> X3
+    X3      --k2--> X2 + X3
+    X2      --k3--> X1 + X2
+    X2 + X3 --k4--> 0
+    X1 + X3 --k5--> X2
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #371  (candidate m=243317, master index 212999)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  0  1  0 -1  0
+     1  1 -1 -1  0  0
+     1 -1  0 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> 0
+    X1      --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #372  (candidate m=243464, master index 250234)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  1  0 -1  0
+     1  1 -1 -1  0  0
+     0 -1  0 -1  0  1
+  Reactions:
+    0       --k1--> X1 + X2
+    X3      --k2--> X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> 0
+    X1      --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #373  (candidate m=243579, master index 498535)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 0
+    0 1 0 1 0 1
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1 -1
+     1  0 -1 -1  0  1
+     1 -1  1 -1  0  0
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1
+    X2      --k3--> X1 + X3
+    X2 + X3 --k4--> 0
+    X1      --k5--> 0
+    X1 + X3 --k6--> X2 + X3
+
+Network #374  (candidate m=243600, master index 203851)
+  Y (reactant matrix, species x reactions):
+    0 0 0 0 1 1
+    0 0 1 1 0 1
+    0 1 0 1 0 0
+  N (stoichiometric matrix, species x reactions):
+     0  1  1  0 -1  0
+     1  1 -1 -1  0  0
+     1 -1  0 -1  0  1
+  Reactions:
+    0       --k1--> X2 + X3
+    X3      --k2--> X1 + X2
+    X2      --k3--> X1
+    X2 + X3 --k4--> 0
+    X1      --k5--> 0
+    X1 + X2 --k6--> X1 + X2 + X3
+
+Network #375  (candidate m=245459, master index 110000)
+  Y (reactant matrix, species x reactions):
+    0 0 0 1 1 1
+    0 1 1 0 0 1
+    1 0 1 0 1 0
+  N (stoichiometric matrix, species x reactions):
+     1  0  0 -1  0 -1
+     0  0 -1  1  1 -1
+    -1  1 -1  0  0  1
+  Reactions:
+    X3      --k1--> X1
+    X2      --k2--> X2 + X3
+    X2 + X3 --k3--> 0
+    X1      --k4--> X2
+    X1 + X3 --k5--> X1 + X2 + X3
+    X1 + X2 --k6--> X3
+
+375/375 passed ODE self-check

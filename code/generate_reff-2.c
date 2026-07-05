@@ -1,0 +1,345 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+#include <stdbool.h>
+#include <errno.h>
+
+#define ROWS 530480 //change to the number of networks in the first file. 
+#define LINE_LENGTH 2048 
+#define SPECIES 3 //change species
+#define REACTIONS 6 //change reactions
+#define TOTAL_ELEMENTS (2 * SPECIES * REACTIONS)  
+#define NEEDED_ELEMENTS (SPECIES * REACTIONS)     
+
+
+double getElement(const double *matrix, int row, int col, int reactions) {
+    return matrix[row * reactions + col];
+}
+
+
+void setElement(double *matrix, int row, int col, double value, int reactions) {
+    matrix[row * reactions + col] = value;
+}
+
+// change two rows
+void swapRows(double *matrix, int row1, int row2, int reactions) {
+    for (int j = 0; j < reactions; j++) {
+        double temp = getElement(matrix, row1, j, reactions);
+        setElement(matrix, row1, j, getElement(matrix, row2, j, reactions), reactions);
+        setElement(matrix, row2, j, temp, reactions);
+    }
+}
+
+// multiply
+void multiplyRow(double *matrix, int row, double scalar, int reactions) {
+    if (fabs(scalar) < 1e-10) return; 
+    for (int j = 0; j < reactions; j++) {
+        setElement(matrix, row, j, getElement(matrix, row, j, reactions) * scalar, reactions);
+    }
+}
+
+// multiply and add
+void addMultipleOfRow(double *matrix, int srcRow, int destRow, double scalar, int reactions) {
+    for (int j = 0; j < reactions; j++) {
+        setElement(matrix, destRow, j, 
+                  getElement(matrix, destRow, j, reactions) + scalar * getElement(matrix, srcRow, j, reactions), 
+                  reactions);
+    }
+}
+
+// calculate REFF
+void reducedRowEchelonForm(double *matrix, int species, int reactions) {
+    int lead = 0;
+    
+    for (int r = 0; r < species; r++) {
+        if (lead >= reactions) {
+            return;
+        }
+        
+        int i = r;
+        while (fabs(getElement(matrix, i, lead, reactions)) < 1e-10) {  
+            i++;
+            if (i == species) {
+                i = r;
+                lead++;
+                if (lead == reactions) {
+                    return;
+                }
+            }
+        }
+        
+        if (i != r) {
+            swapRows(matrix, i, r, reactions);
+        }
+        
+        double pivot = getElement(matrix, r, lead, reactions);
+        if (fabs(pivot) > 1e-10) {  
+            multiplyRow(matrix, r, 1.0 / pivot, reactions);
+        }
+        
+        for (int k = 0; k < species; k++) {
+            if (k != r && fabs(getElement(matrix, k, lead, reactions)) > 1e-10) {
+                double factor = -getElement(matrix, k, lead, reactions);
+                addMultipleOfRow(matrix, r, k, factor, reactions);
+            }
+        }
+        
+        lead++;
+    }
+}
+
+typedef struct {
+    int row_index;
+    double *rref;
+} RowEntry;
+
+typedef struct {
+    double *rref_template;  
+    int *row_indices;       
+    int count;              
+    int capacity;           
+} RREFGroup;
+
+
+int compare_rref(const void *a, const void *b) {
+    RowEntry *entryA = (RowEntry *)a;
+    RowEntry *entryB = (RowEntry *)b;
+    
+    for (int i = 0; i < SPECIES * REACTIONS; i++) {
+        double diff = entryA->rref[i] - entryB->rref[i];
+        if (fabs(diff) > 1e-10) {
+            return (diff > 0) ? 1 : -1;
+        }
+    }
+    return 0;
+}
+
+
+int compare_int(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
+
+void save_groups_to_file(RREFGroup *groups, int group_count, const char *filename) {
+    FILE *file = fopen(filename, "w");
+    if (file == NULL) {
+        perror("Error opening file");
+        return;
+    }
+
+    printf("Total RREF groups: %d\n", group_count);
+    printf("Saving groups to %s...\n", filename);
+    
+    int total_rows = 0;
+    for (int g = 0; g < group_count; g++) {
+        total_rows += groups[g].count;
+    }
+    printf("Total rows in groups: %d (should be %d)\n", total_rows, ROWS);
+    
+    for (int g = 0; g < group_count; g++) {
+        qsort(groups[g].row_indices, groups[g].count, sizeof(int), compare_int);
+        for (int i = 0; i < groups[g].count; i++) {
+            fprintf(file, "%d", groups[g].row_indices[i] + 1);  
+            if (i < groups[g].count - 1) {
+                fprintf(file, " ");
+            }
+        }
+        fprintf(file, "\n");
+    }
+    
+    fclose(file);
+}
+
+int main() {
+    clock_t start, end;
+    double cpu_time_used;
+    start = clock();
+
+    int **data0 = malloc(ROWS * sizeof(int *));
+    if (!data0) {
+        fprintf(stderr, "malloc error: data0\n");
+        return EXIT_FAILURE;
+    }
+
+    for (int i = 0; i < ROWS; i++) {
+        data0[i] = malloc(NEEDED_ELEMENTS * sizeof(int));
+        if (!data0[i]) {
+            fprintf(stderr, "malloc error: data0[%d]\n", i);
+            for (int j = 0; j < i; j++) {
+                free(data0[j]);
+            }
+            free(data0);
+            return EXIT_FAILURE;
+        }
+    }
+
+    FILE *file0 = fopen("363_2-algorithm1-4.txt", "r");//change to the file generated by the first code.
+    if (!file0) {
+        fprintf(stderr, "cannot open .txt: %s\n", strerror(errno));
+        for (int i = 0; i < ROWS; i++) free(data0[i]);
+        free(data0);
+        return EXIT_FAILURE;
+    }
+
+    char line[LINE_LENGTH];
+    int row = 0;
+    
+    while (row < ROWS && fgets(line, sizeof(line), file0)) {
+        line[strcspn(line, "\n\r")] = '\0';
+        
+        char *ptr = line;
+        int elements_skipped = 0;
+        int elements_read = 0;
+        
+        while (elements_skipped < NEEDED_ELEMENTS && *ptr != '\0') {
+            while (*ptr != '\0' && (*ptr == '-' || (*ptr >= '0' && *ptr <= '9'))) {
+                ptr++;
+            }
+            elements_skipped++;
+            
+            while (*ptr != '\0' && (*ptr == ' ' || *ptr == ',')) {
+                ptr++;
+            }
+        }
+        
+        // read N matrix
+        while (elements_read < NEEDED_ELEMENTS && *ptr != '\0') {
+            char *start = ptr;
+
+            int is_negative = 0;
+            if (*ptr == '-') {
+                is_negative = 1;
+                ptr++;
+            }
+            
+            long value = 0;
+            while (*ptr >= '0' && *ptr <= '9') {
+                value = value * 10 + (*ptr - '0');
+                ptr++;
+            }
+            
+            if (is_negative) {
+                value = -value;
+            }
+            
+            data0[row][elements_read] = (int)value;
+            elements_read++;
+            
+            while (*ptr != '\0' && (*ptr == ' ' || *ptr == ',')) {
+                ptr++;
+            }
+        }
+        
+        if (elements_read != NEEDED_ELEMENTS) {
+            fprintf(stderr, "error: the %d-th row only read %d elements, but expect %d elements\n", 
+                    row + 1, elements_read, NEEDED_ELEMENTS);
+            for (int i = elements_read; i < NEEDED_ELEMENTS; i++) {
+                data0[row][i] = 0;
+            }
+        }
+        
+        // // print the first several rows
+        // if (row < 5) {
+        //     printf("the %d-th row (last half elements)): ", row);
+        //     for (int i = 0; i < NEEDED_ELEMENTS && i < 10; i++) {
+        //         printf("%d ", data0[row][i]);
+        //     }
+        //     printf("...\n");
+        // }
+        
+        row++;
+    }
+
+    if (row != ROWS) {
+        fprintf(stderr, "read file error, read %d/%d rows \n", row, ROWS);
+        for (int i = 0; i < ROWS; i++) free(data0[i]);
+        free(data0);
+        fclose(file0);
+        return EXIT_FAILURE;
+    }
+
+    fclose(file0);
+
+    double **rref_data = malloc(ROWS * sizeof(double *));
+    for (int i = 0; i < ROWS; i++) {
+        rref_data[i] = malloc(SPECIES * REACTIONS * sizeof(double));
+        
+        for (int j = 0; j < SPECIES * REACTIONS; j++) {
+            rref_data[i][j] = (double)data0[i][j];
+        }
+        
+        reducedRowEchelonForm(rref_data[i], SPECIES, REACTIONS);
+        
+        // // print reff of first 3 rows
+        // if (i < 3) {
+        //     printf("first 10 element of REFF of the %d-th row: ", i);
+        //     for (int j = 0; j < 10 && j < SPECIES * REACTIONS; j++) {
+        //         printf("%.2f ", rref_data[i][j]);
+        //     }
+        //     printf("...\n");
+        // }
+    }
+
+    RowEntry *row_entries = malloc(ROWS * sizeof(RowEntry));
+    for (int i = 0; i < ROWS; i++) {
+        row_entries[i].row_index = i;
+        row_entries[i].rref = rref_data[i];
+    }
+    
+    qsort(row_entries, ROWS, sizeof(RowEntry), compare_rref);
+
+    RREFGroup *groups = malloc(ROWS * sizeof(RREFGroup));
+    int group_count = 0;
+    int current_group_start = 0;
+
+    for (int i = 1; i <= ROWS; i++) {
+        if (i == ROWS || compare_rref(&row_entries[i], &row_entries[current_group_start]) != 0) {
+            groups[group_count].rref_template = row_entries[current_group_start].rref;
+            groups[group_count].count = i - current_group_start;
+            groups[group_count].capacity = groups[group_count].count;
+            groups[group_count].row_indices = malloc(groups[group_count].count * sizeof(int));
+            
+            for (int j = 0; j < groups[group_count].count; j++) {
+                groups[group_count].row_indices[j] = row_entries[current_group_start + j].row_index;
+            }
+            
+            // first several groups 
+            if (group_count < 5) {
+                printf("class %d: include %d rows, the first index %d\n", 
+                       group_count, groups[group_count].count, 
+                       groups[group_count].row_indices[0] + 1);
+            }
+            
+            group_count++;
+            current_group_start = i;
+        }
+    }
+
+    printf("In total: %d classes\n", group_count);
+    
+    save_groups_to_file(groups, group_count, "363_2-new_binary_reff_new.txt");//change this output name 
+
+    free(row_entries);
+    
+    for (int g = 0; g < group_count; g++) {
+        free(groups[g].row_indices);
+    }
+    free(groups);
+    
+    for (int i = 0; i < ROWS; i++) {
+        free(rref_data[i]);
+    }
+    free(rref_data);
+    
+    for (int i = 0; i < ROWS; i++) {
+        free(data0[i]);
+    }
+    free(data0);
+
+    end = clock();
+    cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("Time: %.2f s\n", cpu_time_used);
+    
+    return 0;
+}

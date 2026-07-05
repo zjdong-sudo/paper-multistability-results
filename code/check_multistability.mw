@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Worksheet>
+<Version major="2024" minor="0"/>
+<Label-Scheme value="2" prefix=""/>
+<View-Properties presentation="false" autoexpanding_sections="true" UserProfileName="Maple\351\273\230\350\256\244\351\205\215\347\275\256" NumericFormat-ApplyInteger="true" NumericFormat-ApplyRational="true" NumericFormat-ApplyExponent="false" editable="true">
+</View-Properties>
+<MapleNet-Properties prettyprint="3" warnlevel="3" compactdisplay="false" preplot="" helpbrowser="standard" displayprecision="-1" echo="1" scientificx="true" unitattributes="&quot;fontweight&quot; = &quot;bold&quot;" imaginaryunit="I" longdelim="true" elisiontermsthreshold="10000" elisiondigitsafter="100" elisiondigitsbefore="100" plotdevice="inline" errorbreak="1" plotoptions="" plotdriver="opengl" quiet="false" elisiontermsbefore="100" elisiontermsafter="100" historytimestamp="false" screenwidth="79" indentamount="4" plotoutput="terminal" screenpixelheight="1080" rtablesize="[10, 10]" useclientjvm="true" format="worksheet" labelwidth="20" postplot="" typesetting="extended" ansi="false" ansicolor="[]" elisiondigitsthreshold="10000" showassumed="1" ansilprint="false" trailingsemicolon="true" errorcursor="false" labelling="true" screenheight="25" prompt="&gt; " verboseproc="1" latexwidth="8.0" ShowLabels="true"/>
+<Styles>
+<Font name="Heading 1" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Warning" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="2D Output" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Heading 4" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Line Printed Output" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Heading 2" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="16" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Maple Output" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="2D Inert Output" background="[255,255,255]" bold="false" executable="true" family="SimSun" foreground="[144,144,144]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Heading 3" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="14" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Diagnostic" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[40,120,40]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Ordered List 1" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Maple Input" background="[255,255,255]" bold="true" executable="true" family="SimSun" foreground="[120,0,14]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Text Output" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Ordered List 2" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Ordered List 3" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Ordered List 4" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Ordered List 5" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Header and Footer" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="10" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="HyperlinkError" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" strikethrough="false" placeholder="false"/>
+<Font name="Atomic Variable" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[175,0,175]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="HyperlinkWarning" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" strikethrough="false" placeholder="false"/>
+<Font name="Dictionary Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[147,0,15]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" strikethrough="false" placeholder="false"/>
+<Font name="2D Math" background="[255,255,255]" bold="false" executable="true" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Bullet Item" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Maple Plot" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="List Item" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Dash Item" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="2D Input" background="[255,255,255]" bold="false" executable="true" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Error" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Title" background="[255,255,255]" bold="true" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Text" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Normal" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Caption Reference" background="[255,255,255]" bold="true" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Code" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[255,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Maple Input Placeholder" background="[255,255,255]" bold="true" executable="true" family="SimSun" foreground="[200,0,200]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="true"/>
+<Font name="Equation Label" background="[255,255,255]" bold="true" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Author" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[0,128,128]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" strikethrough="false" placeholder="false"/>
+<Font name="Caption Text" background="[255,255,255]" bold="true" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Layout name="Bullet Item" alignment="left" bullet="dot" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Maple Plot" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 1" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="4" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Warning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 4" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Line Printed Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="List Item" alignment="left" bullet="indent" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 2" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="2" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Maple Output" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.3" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 3" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Dash Item" alignment="left" bullet="dash" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Error" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Diagnostic" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Ordered List 1" alignment="left" bullet="numeric" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix="."/>
+<Layout name="Text Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="newline" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Ordered List 2" alignment="left" bullet="alphabetic" firstindent="0" leftmargin="36" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix="."/>
+<Layout name="Ordered List 3" alignment="left" bullet="roman" firstindent="0" leftmargin="72" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix="."/>
+<Layout name="Normal" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Ordered List 4" alignment="left" bullet="ALPHABETIC" firstindent="0" leftmargin="108" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix="."/>
+<Layout name="Ordered List 5" alignment="left" bullet="ROMAN" firstindent="0" leftmargin="144" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix="."/>
+<Layout name="HyperlinkError" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Author" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="8" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="HyperlinkWarning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Pencil-style name="Pencil 1" pen-color="[0,0,0]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 2" pen-color="[0,0,255]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 3" pen-color="[0,0,0]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 4" pen-color="[0,0,255]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 5" pen-color="[255,0,0]" pen-height="5.0" pen-width="5.0" pen-opacity="1.0"/>
+<Highlighter-style name="Highlighter 5" pen-color="[255,255,0]" pen-height="48.0" pen-width="48.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 3" pen-color="[51,255,0]" pen-height="24.0" pen-width="24.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 4" pen-color="[0,255,255]" pen-height="32.0" pen-width="32.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 1" pen-color="[255,153,255]" pen-height="12.0" pen-width="8.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 2" pen-color="[255,204,0]" pen-height="14.0" pen-width="14.0" pen-opacity="0.8"/>
+</Styles>
+<Startup-Code startupcode=""/>
+<Task-table>
+	<Task-category name="&lt;default&gt;"/>
+</Task-table>
+<Task/>
+<Group labelreference="L1" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzZLLUkjbWlHRiQ2JVEocmVzdGFydEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi5RIjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjEvJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSllcXVhbGl0eUdGPS1JJ21zcGFjZUdGJDYmLyUnaGVpZ2h0R1EmMC4wZXhGJy8lJndpZHRoR0ZMLyUmZGVwdGhHRlcvJSpsaW5lYnJlYWtHUShuZXdsaW5lRictRlM2JkZVRlhGWi9GZ25RJWF1dG9GJy1GLDYlUSV3aXRoRidGL0YyLUkobWZlbmNlZEdGJDYkLUYjNiYtRiw2JVEuUmVndWxhckNoYWluc0YnRi9GMi8lJ2ZhbWlseUdRMFRpbWVzfk5ld35Sb21hbkYnLyUrZXhlY3V0YWJsZUdGPUY5RjktRjY2LlEiOkYnRjlGOy9GP0Y9RkBGQkZERkZGSC9GS0ZPRk1GUEZSRmluRl1vLUZhbzYkLUYjNiYtRiw2JVE2UGFyYW1ldHJpY1N5c3RlbVRvb2xzRidGL0YyRmhvRltwRjlGOUZdcEZSRmluRl1vLUZhbzYkLUYjNiYtRiw2JVE2U2VtaUFsZ2VicmFpY1NldFRvb2xzRidGL0YyRmhvRltwRjlGOUZdcEZSRmluRl1vLUZhbzYkLUYjNiYtRiw2JVEsUm9vdEZpbmRpbmdGJ0YvRjJGaG9GW3BGOUY5Rl1wRlJGaW5GXW8tRmFvNiQtRiM2Ji1GLDYlUS5MaW5lYXJBbGdlYnJhRidGL0YyRmhvRltwRjlGOUZdcC1GNjYuUSJ+RidGOUY7RmBwRkBGQkZERkZGSEZKL0ZORkxGUEZSRl1vLUZhbzYkLUYjNiQtRiw2JVEvVmVjdG9yQ2FsY3VsdXNGJ0YvRjJGOUY5Rl1wRl5yRlJGXW8tRmFvNiQtRiM2Ji1GLDYlUSxTdHJpbmdUb29sc0YnRi9GMkZob0ZbcEY5RjlGXXBGXnJGaG9GW3BGOQ==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzZLLUkjbWlHRiQ2JVEocmVzdGFydEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi5RIjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjEvJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSllcXVhbGl0eUdGPS1JJ21zcGFjZUdGJDYmLyUnaGVpZ2h0R1EmMC4wZXhGJy8lJndpZHRoR0ZMLyUmZGVwdGhHRlcvJSpsaW5lYnJlYWtHUShuZXdsaW5lRictRlM2JkZVRlhGWi9GZ25RJWF1dG9GJy1GLDYlUSV3aXRoRidGL0YyLUkobWZlbmNlZEdGJDYkLUYjNiYtRiw2JVEuUmVndWxhckNoYWluc0YnRi9GMi8lJ2ZhbWlseUdRMFRpbWVzfk5ld35Sb21hbkYnLyUrZXhlY3V0YWJsZUdGPUY5RjktRjY2LlEiOkYnRjlGOy9GP0Y9RkBGQkZERkZGSC9GS0ZPRk1GUEZSRmluRl1vLUZhbzYkLUYjNiYtRiw2JVE2UGFyYW1ldHJpY1N5c3RlbVRvb2xzRidGL0YyRmhvRltwRjlGOUZdcEZSRmluRl1vLUZhbzYkLUYjNiYtRiw2JVE2U2VtaUFsZ2VicmFpY1NldFRvb2xzRidGL0YyRmhvRltwRjlGOUZdcEZSRmluRl1vLUZhbzYkLUYjNiYtRiw2JVEsUm9vdEZpbmRpbmdGJ0YvRjJGaG9GW3BGOUY5Rl1wRlJGaW5GXW8tRmFvNiQtRiM2Ji1GLDYlUS5MaW5lYXJBbGdlYnJhRidGL0YyRmhvRltwRjlGOUZdcC1GNjYuUSJ+RidGOUY7RmBwRkBGQkZERkZGSEZKL0ZORkxGUEZSRl1vLUZhbzYkLUYjNiQtRiw2JVEvVmVjdG9yQ2FsY3VsdXNGJ0YvRjJGOUY5Rl1wRl5yRlJGXW8tRmFvNiQtRiM2Ji1GLDYlUSxTdHJpbmdUb29sc0YnRi9GMkZob0ZbcEY5RjlGXXBGXnJGaG9GW3BGOQ==</Equation></Text-field>
+</Input>
+</Group><CodeEditor-ExecGroup view="presentation" hide-input="false" labelreference="L4" drawlabel="true" applyint="true" applyrational="true" display="code"><EC-CodeEditor id="CodeEditRegion0" expanded="true" visible="true" pixel-width="500" pixel-height="200" code-language="text/maple" autofit="true" wrapping="true" show-border="true" code-line-numbers="true">
+# 1. \350\267\257\345\276\204\350\256\276\347\275\256
+T := Import(&quot;D:/multistability/odesystem.csv&quot;, output = Matrix):
+C := Import(&quot;D:/multistability/candidate_indices_2.csv&quot;, output = Matrix): 
+final_report := &quot;D:/multistability/check_multistability_2.txt&quot;:
+
+# 2. \347\216\257\345\242\203\345\210\235\345\247\213\345\214\226
+vars := [x1, x2, x3]:
+params := [k1, k2, k3, k4, k5, k6]:
+R := PolynomialRing([op(vars), op(params)]):
+
+num_candidates := LinearAlgebra:-RowDimension(C):
+global_summary_list := []: 
+
+# \346\230\276\345\274\217\345\234\250\347\273\210\347\253\257\346\211\223\345\215\260\345\274\200\345\247\213\344\277\241\346\201\257
+printf(&quot;&gt;&gt;&gt; \345\205\261\351\234\200\345\244\204\347\220\206 %d \344\270\252\345\200\231\351\200\211\347\275\221\347\273\234 &lt;&lt;&lt;\134n&quot;, num_candidates);
+
+
+# \345\210\235\345\247\213\345\214\226/\346\270\205\347\251\272\346\226\207\344\273\266
+fd := fopen(final_report, WRITE):
+fclose(fd):
+
+for j from 1 to num_candidates do
+    raw_val := C[j, 1]:
+    net_idx := `if`(type(raw_val, string), parse(raw_val), raw_val):
+    
+    # \347\273\210\347\253\257\345\256\236\346\227\266\350\277\233\345\272\246
+    printf(&quot;\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 %d/%d \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: %a)... &quot;, j, num_candidates, net_idx);
+    
+    f1 := parse(T[net_idx, 1]):
+    f2 := parse(T[net_idx, 2]):
+    f3 := parse(T[net_idx, 3]):
+    F := [f1, f2, f3]:
+    
+    total_samples_found := 0:
+    total_pos_sols_found := 0:
+    total_stable_sols_found := 0:
+    max_stable_per_sample := 0:
+
+    try
+        
+        res := RealRootClassification(F, [], [op(vars), op(params)], [], 6, 3..8, R, output = samples):
+        sample_points := res:-SamplePoints:
+        total_samples_found := nops(sample_points):
+
+        if total_samples_found &gt; 0 then
+            # \345\206\231\345\205\245\346\226\207\344\273\266\350\257\246\346\203\205
+            appendto(final_report):
+            printf(&quot;\134n%s\134n&quot;, Repeat(&quot;=&quot;, 60)):
+            printf(&quot;\347\275\221\347\273\234\347\264\242\345\274\225: %a | \346\240\267\346\234\254\347\202\271\346\225\260: %d\134n&quot;, net_idx, total_samples_found):
+            printf(&quot;%s\134n&quot;, Repeat(&quot;=&quot;, 60)):
+
+            for k from 1 to total_samples_found do
+                sp := sample_points[k]:
+                F_num := eval(F, sp):
+                sols := Isolate(F_num, vars):
+                pos_sols := select(s -&gt; andmap(eq -&gt; rhs(eq) &gt; 0, s), sols):
+                
+                total_pos_sols_found := total_pos_sols_found + nops(pos_sols):
+                sp_stable_count := 0:
+
+                printf(&quot;\134n  [\346\240\267\346\234\254\347\202\271 %d]: %a\134n&quot;, k, sp):
+                
+                for sol in pos_sols do
+                    sub_list := [op(sp), op(sol)]:
+                    J_num := eval(VectorCalculus:-Jacobian(F, vars), sub_list):
+                    evals := Eigenvalues(evalf(J_num)):
+                    is_stable := evalb(andmap(e -&gt; Re(e) &lt; -1e-9, convert(evals, list))):
+                    
+                    if is_stable then 
+                        sp_stable_count := sp_stable_count + 1: 
+                        total_stable_sols_found := total_stable_sols_found + 1:
+                    fi:
+                    
+                    printf(&quot;    - \346\265\223\345\272\246: %a\134n&quot;, sol):
+                    printf(&quot;      \347\211\271\345\276\201\345\200\274: %a\134n&quot;, evals):
+                    printf(&quot;      \347\212\266\346\200\201: %s\134n&quot;, `if`(is_stable, &quot;\347\250\263\345\256\232&quot;, &quot;\344\270\215\347\250\263\345\256\232&quot;)):
+                od:
+                printf(&quot;  \345\260\217\347\273\223: \350\257\245\347\202\271\346\255\243\351\251\273\347\202\271%d, \347\250\263\345\256\232 %d\134n&quot;, nops(pos_sols), sp_stable_count):
+                max_stable_per_sample := max(max_stable_per_sample, sp_stable_count):
+            od:
+            is_multistable := max_stable_per_sample &gt;= 2:
+            # \345\210\207\345\233\236\347\273\210\347\253\257\346\230\276\347\244\272\346\210\220\345\212\237
+            writeto(terminal):
+            printf(&quot;\345\256\214\346\210\220 (\345\215\225\347\202\271\346\234\200\345\244\247\347\250\263\345\256\232: %d, \345\244\232\347\250\263\346\200\201: %s)\134n&quot;, max_stable_per_sample, `if`(is_multistable, &quot;\346\230\257&quot;, &quot;\345\220\246&quot;));
+        else
+            writeto(terminal):
+            printf(&quot;\350\267\263\350\277\207 (\346\227\240\346\240\267\346\234\254\347\202\271)\134n&quot;);
+        fi:
+        global_summary_list := [op(global_summary_list), [net_idx, total_samples_found, total_pos_sols_found, max_stable_per_sample, is_multistable]]:
+        
+    catch:
+        writeto(terminal):
+        printf(&quot;\345\244\261\350\264\245 (\350\256\241\347\256\227\350\266\205\346\227\266\346\210\226\345\207\272\351\224\231)\134n&quot;);
+        global_summary_list := [op(global_summary_list), [net_idx, &quot;Error&quot;, 0, 0, false]]:
+    end try:
+od:
+
+# --- \346\234\200\347\273\210\346\261\207\346\200\273 ---
+appendto(final_report):
+printf(&quot;\134n\134n%s\134n&quot;, Repeat(&quot;=&quot;, 60)):
+printf(&quot;                \345\205\250\345\261\200\346\261\207\346\200\273\347\273\237\350\256\241\350\241\250\134n&quot;):
+printf(&quot;%s\134n&quot;, Repeat(&quot;=&quot;, 60)):
+printf(&quot;%-12s | %-12s | %-12s | %-12s | %-12s\134n&quot;, &quot;\347\275\221\347\273\234\347\264\242\345\274\225&quot;, &quot;\346\240\267\346\234\254\347\202\271\346\225\260&quot;, &quot;\346\255\243\351\251\273\347\202\271\346\200\273\346\225\260&quot;, &quot;\345\215\225\347\202\271\346\234\200\345\244\247\347\250\263\345\256\232&quot;, &quot;\345\244\232\347\250\263\346\200\201?&quot;):
+printf(&quot;%s\134n&quot;, Repeat(&quot;-&quot;, 60)):
+for item in global_summary_list do
+    printf(&quot;%-12a | %-12a | %-12a | %-12a | %-12a\134n&quot;, item[1], item[2], item[3], item[4], item[5]):
+od:
+printf(&quot;%s\134n&quot;, Repeat(&quot;=&quot;, 60)):
+writeto(terminal):
+
+printf(&quot;\134n&gt;&gt;&gt; \344\273\273\345\212\241\345\205\250\351\203\250\345\256\214\346\210\220\357\274\201\350\257\267\346\243\200\346\237\245 TXT \346\226\207\344\273\266\343\200\202&lt;&lt;&lt;\134n&quot;);</EC-CodeEditor>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"><Font encoding="UTF-8">&gt;&gt;&gt; \345\205\261\351\234\200\345\244\204\347\220\206 64 \344\270\252\345\200\231\351\200\211\347\275\221\347\273\234 &lt;&lt;&lt;
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 1/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 11394)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 2/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 11443)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 3/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 11454)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 4/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 13805)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 5/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 15442)... \345\256\214\346\210\220 (\346\211\276\345\210\260 4 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 6/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 16699)... \345\256\214\346\210\220 (\346\211\276\345\210\260 4 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 7/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 16701)... \345\256\214\346\210\220 (\346\211\276\345\210\260 14 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 8/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 17920)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 9/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 18002)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 10/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 18597)... \345\256\214\346\210\220 (\346\211\276\345\210\260 4 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 11/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 19756)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 12/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 20512)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 13/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 30495)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 14/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 33170)... \345\256\214\346\210\220 (\346\211\276\345\210\260 6 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 15/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 33194)... \345\256\214\346\210\220 (\346\211\276\345\210\260 6 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 16/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 33449)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 17/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 34456)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 18/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 34710)... \345\256\214\346\210\220 (\346\211\276\345\210\260 4 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 19/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 35332)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 20/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 36410)... \345\256\214\346\210\220 (\346\211\276\345\210\260 4 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 21/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 36411)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 22/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 36435)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 23/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 36476)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 24/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 36508)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 25/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 36544)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 26/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 36603)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 27/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 36689)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 28/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 37375)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 29/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 37378)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 30/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 37528)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 31/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 37541)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 32/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 37902)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 33/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 38596)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 34/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 38886)... \345\256\214\346\210\220 (\346\211\276\345\210\260 18 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 35/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 38911)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 36/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 38961)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 37/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 39022)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 38/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 39111)... \345\256\214\346\210\220 (\346\211\276\345\210\260 12 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 39/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 39112)... \345\256\214\346\210\220 (\346\211\276\345\210\260 14 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 40/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 39235)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 41/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 40573)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 42/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 40577)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 43/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 40607)... \345\256\214\346\210\220 (\346\211\276\345\210\260 6 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 44/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 41781)... \345\256\214\346\210\220 (\346\211\276\345\210\260 4 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 45/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 41800)... \345\256\214\346\210\220 (\346\211\276\345\210\260 6 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 46/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 41912)... \345\256\214\346\210\220 (\346\211\276\345\210\260 4 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 47/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 42018)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 48/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 42055)... \345\256\214\346\210\220 (\346\211\276\345\210\260 6 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 49/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 42125)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 50/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 42164)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 51/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 42419)... \345\256\214\346\210\220 (\346\211\276\345\210\260 4 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 52/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 44027)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 53/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 44274)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 54/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 44279)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 55/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 44312)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 56/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 44705)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 57/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 44756)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 58/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 45183)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 59/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 45222)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 60/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 45360)... \345\256\214\346\210\220 (\346\211\276\345\210\260 6 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 61/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 45361)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 62/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 45385)... \345\256\214\346\210\220 (\346\211\276\345\210\260 2 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 63/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 46376)... \345\256\214\346\210\220 (\346\211\276\345\210\260 6 \344\270\252\347\250\263\345\256\232\347\202\271)
+\346\255\243\345\234\250\345\244\204\347\220\206\347\254\254 64/64 \344\270\252\347\275\221\347\273\234 (\347\264\242\345\274\225: 46377)... \345\256\214\346\210\220 (\346\211\276\345\210\260 6 \344\270\252\347\250\263\345\256\232\347\202\271)
+</Font>
+<Font encoding="UTF-8">&gt;&gt;&gt; \344\273\273\345\212\241\345\205\250\351\203\250\345\256\214\346\210\220\357\274\201\350\257\267\346\243\200\346\237\245 TXT \346\226\207\344\273\266\343\200\202&lt;&lt;&lt;
+</Font></Text-field>
+</Output></CodeEditor-ExecGroup>
+<Group labelreference="L2" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbW9HRiQ2LlEifkYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0Y0LyUqc3ltbWV0cmljR0Y0LyUobGFyZ2VvcEdGNC8lLm1vdmFibGVsaW1pdHNHRjQvJSdhY2NlbnRHRjQvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZDLyUpZXF1YWxpdHlHRjQvJSdmYW1pbHlHUTBUaW1lc35OZXd+Um9tYW5GJy8lK2V4ZWN1dGFibGVHRjRGLw==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbW9HRiQ2LlEifkYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0Y0LyUqc3ltbWV0cmljR0Y0LyUobGFyZ2VvcEdGNC8lLm1vdmFibGVsaW1pdHNHRjQvJSdhY2NlbnRHRjQvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZDLyUpZXF1YWxpdHlHRjQvJSdmYW1pbHlHUTBUaW1lc35OZXd+Um9tYW5GJy8lK2V4ZWN1dGFibGVHRjRGLw==</Equation></Text-field>
+</Input>
+</Group>
+</Worksheet>
