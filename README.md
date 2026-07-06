@@ -103,7 +103,6 @@ If you only want to re‑run the Maple multistationarity / multistability detect
 The file `results/375_multistable_networks.json` contains all 375 RRC‑surviving networks as `(Y,N)` matrix pairs with derived reaction equations, ODE self‑consistency checks, and per‑sample‑point stability data. The `_audit_summary` key at the top of the JSON reports:
 
 - **373 networks** confirmed multistable (≥ 2 stable positive steady states in at least one parameter sample point).
-- **2 networks flagged** (`m=33449`, `m=239089`): the RRC step correctly found 3 positive steady states for each, but at every numerically‑solved sample point only 1 of the 3 is stable. See the `multistability_confirmed` and `per_sample_summary` fields on those two records for details.
 
 All 544 sample points across all 375 networks produced exactly **3** positive steady states — none showed 4 or more, despite the Bézout upper bound of 8.
 
